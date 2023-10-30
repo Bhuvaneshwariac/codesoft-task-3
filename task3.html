@@ -1,0 +1,808 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" style="font-weight: 900;">Bhuvaneshwari C</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bhuvaneshwari C</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="bhu.jpeg" alt="profile picture" style="border-radius: 50%; height: 400px; width: 400px;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bhuvaneshwari C</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="bhu.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                  </svg>
+              <h3>Experience</h3>
+              <p>1+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+              <h3>Education</h3>
+              <p>B.Tech Bachelors Degree<br />Artificial Intelligence</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             
+                An autobiography is a written account of a person's life, narrated by the individual themselves. It is a form of non-fiction literature in which
+                the author reflects on their life experiences, achievements, challenges, and personal journey.
+                Autobiographies provide readers with insights into the author's thoughts, emotions, 
+                and the events that have shaped their life. They can cover a wide range of topics,
+                from personal anecdotes and memories to professional achievements and significant life events.
+                Autobiographies are a valuable literary genre for gaining a deeper understanding of the author and their perspective on their own life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                  </svg>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+                  </svg>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+                  </svg>
+                <div>
+                  <h3>TailWind</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                  </svg>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+                  </svg>
+                <div>
+                  <h3>Bootstrap </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
+                  </svg>
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-radioactive" viewBox="0 0 16 16">
+                    <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z"/>
+                    <path d="M9.653 5.496A2.986 2.986 0 0 0 8 5c-.61 0-1.179.183-1.653.496L4.694 2.992A5.972 5.972 0 0 1 8 2c1.222 0 2.358.365 3.306.992L9.653 5.496Zm1.342 2.324a2.986 2.986 0 0 1-.884 2.312 3.01 3.01 0 0 1-.769.552l1.342 2.683c.57-.286 1.09-.66 1.538-1.103a5.986 5.986 0 0 0 1.767-4.624l-2.994.18Zm-5.679 5.548 1.342-2.684A3 3 0 0 1 5.005 7.82l-2.994-.18a6 6 0 0 0 3.306 5.728ZM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+                  </svg>
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                  </svg>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+                  </svg>
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <br>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqU-IuA-NkTtSWo1YhUU-eJYKEBBEc0a8wwTYTZJ8c&s"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://cdn.educba.com/academy/wp-content/uploads/2020/01/Deep-Learning.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <svg  class="icon contact-icon email-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+              </svg>
+          <p><a href="mailto:examplemail@gmail.com">bhuvaneshwaric.21aid@kongu.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+            <svg  class="icon contact-icon email-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+          <p><a href="https://www.linkedin.com">Bhuvaneshwari C</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Bhuvaneshwari C. All Rights Reserved.</p>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+
+
+
+<style>
+
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 80%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+</style>
+
